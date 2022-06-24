@@ -1,0 +1,4 @@
+mpmath==1.2.1
+PySide6==6.2.2.1
+shiboken6==6.2.2.1
+sympy==1.9
