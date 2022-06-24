@@ -1,0 +1,1157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>248</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(
+        cx: 0.5, cy: -0.4, fx: 0.5, fy: -0.4,
+        radius: 1.4, stop: 0 #494c4d, stop: 1 #1e2225
+        );</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="5" column="2">
+      <widget class="QPushButton" name="btn_6">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="shortcut">
+        <string>6</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <layout class="QVBoxLayout" name="verticalLayout_16">
+       <item>
+        <widget class="QPushButton" name="sqrt_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+         </property>
+         <property name="text">
+          <string>√</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pow_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+         </property>
+         <property name="text">
+          <string>^</string>
+         </property>
+         <property name="shortcut">
+          <string>^</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="dot_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>.</string>
+       </property>
+       <property name="shortcut">
+        <string>.</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_15">
+       <item>
+        <widget class="QPushButton" name="cos_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+         </property>
+         <property name="text">
+          <string>cos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="sin_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+         </property>
+         <property name="text">
+          <string>sin</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="btn_1">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="shortcut">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3" rowspan="2">
+      <widget class="QPushButton" name="sum_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 70;
+	font: 400 25pt &quot;Segoe UI&quot;;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #8C27DB stop: 1 #a33aff
+        );;
+	color: rgb(255, 255, 255);
+	border-radius: 8px;
+}
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #b27be5 stop: 1 #8C27DB
+        );
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #c587ff, stop: 1 #c587ff
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>+</string>
+       </property>
+       <property name="shortcut">
+        <string>+</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="percentage_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 15pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+       </property>
+       <property name="text">
+        <string>%</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="btn_4">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="shortcut">
+        <string>4</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="btn_9">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>9</string>
+       </property>
+       <property name="shortcut">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_14">
+         <item>
+          <widget class="QPushButton" name="tan_btn">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+           </property>
+           <property name="text">
+            <string>tan</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="cot_btn">
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+           </property>
+           <property name="text">
+            <string>cot</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="ac_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #fdb82d stop: 1 #ffc654
+        );
+	color: #1e2225;
+	border-radius: 8px;
+}
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+       </property>
+       <property name="text">
+        <string>AC</string>
+       </property>
+       <property name="shortcut">
+        <string>Esc</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="btn_5">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="shortcut">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="btn_8">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>8</string>
+       </property>
+       <property name="shortcut">
+        <string>8</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="btn_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="shortcut">
+        <string>2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="btn_0">
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>15</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+       <property name="shortcut">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="cross_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 25pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #44305a stop: 1 #4b375e
+        );;
+	color: #a874d3;
+}
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #b27be5 stop: 1 #8C27DB
+        );
+	color: #ffffff;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #c587ff, stop: 1 #c587ff
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>×</string>
+       </property>
+       <property name="shortcut">
+        <string>*</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QPushButton" name="equal_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>=</string>
+       </property>
+       <property name="shortcut">
+        <string>Enter</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="sub_btn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 25pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #44305a stop: 1 #4b375e
+        );;
+	color: #a874d3;
+}
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #b27be5 stop: 1 #8C27DB
+        );
+	color: #ffffff;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #c587ff, stop: 1 #c587ff
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>-</string>
+       </property>
+       <property name="shortcut">
+        <string>-</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="btn_7">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>7</string>
+       </property>
+       <property name="shortcut">
+        <string>7</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_18">
+       <item>
+        <widget class="QPushButton" name="backspace">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>assets/backspace.png</normaloff>assets/backspace.png</iconset>
+         </property>
+         <property name="shortcut">
+          <string>Backspace</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="log_btn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #44305a stop: 1 #4b375e
+        );;
+	color: #a874d3;
+}
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #b27be5 stop: 1 #8C27DB
+        );
+	color: #ffffff;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #c587ff, stop: 1 #c587ff
+        );
+    }
+</string>
+         </property>
+         <property name="text">
+          <string>log</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="0" colspan="4">
+      <widget class="QLineEdit" name="textBox">
+       <property name="styleSheet">
+        <string notr="true">font: bold 25pt &quot;DejaVu Sans Mono&quot;;
+height: 70;
+color: #a4adac;
+background-color: qradialgradient(
+        cx: 0.5, cy: -0.4, fx: 0.5, fy: -0.4,
+        radius: 1.35, stop: 0 #3b3e40, stop: 1 #34383a
+        );
+border-style: outside;
+border-radius: 5px;
+padding: 8px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="division_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 20pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #44305a stop: 1 #4b375e
+        );;
+	color: #a874d3;
+}
+QPushButton:hover {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #b27be5 stop: 1 #8C27DB
+        );
+	color: #ffffff;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #c587ff, stop: 1 #c587ff
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>÷</string>
+       </property>
+       <property name="shortcut">
+        <string>/</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QPushButton" name="btn_3">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="tabletTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	width: 15;
+	height: 30;
+	font: bold 15pt &quot;Segoe UI&quot;;
+    color: #cfd8dc;
+    border-radius: 20px;
+    border-style: outside;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #263238, stop: 1 #37474f
+        );
+    border-radius: 8px;
+    }
+
+QPushButton:pressed {
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #37474f, stop: 1 #263238
+        );
+    }
+</string>
+       </property>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="shortcut">
+        <string>3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="neg_pos_btn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 15pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+       </property>
+       <property name="text">
+        <string>±</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QPushButton" name="parenthesis_o">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+       </property>
+       <property name="text">
+        <string>(</string>
+       </property>
+       <property name="shortcut">
+        <string>(</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QPushButton" name="parenthesis_c">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	width: 15;
+	height: 30;
+	font: 400 12pt &quot;Segoe UI&quot;;
+	border-radius: 8px;
+	background-color: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #484137 stop: 1 #484137
+        );
+	color: #ffc654;
+	border-radius: 8px;
+}
+QPushButton:hover {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+        radius: 1.35, stop: 0 #ffc654 stop: 1 #fdb82d
+        );
+    }
+
+QPushButton:pressed {
+	color: #ffffff;
+    background: qradialgradient(
+        cx: 0.4, cy: -0.1, fx: 0.4, fy: -0.1,
+        radius: 1.35, stop: 0 #f9d07c, stop: 1 #f9d07c
+        );
+    }</string>
+       </property>
+       <property name="text">
+        <string>)</string>
+       </property>
+       <property name="shortcut">
+        <string>)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
