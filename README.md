@@ -6,3 +6,4 @@
   - [x] ➕  ➖  ✖️  ➗
   - [x] sin, cos, tan, cot
   - [x] log, sqrt
+![view](https://user-images.githubusercontent.com/53625204/175526253-883b846c-3afc-4f66-a89d-8a941c05ba1e.png)
